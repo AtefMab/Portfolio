@@ -20,7 +20,12 @@ body {
   cursor: none;
 }
 
-      
+@media (max-width: 768px) {
+  #fh5co-header {
+      height: 70vh; /* Adjust height for smaller screens */
+      width: 100vw;
+  }
+}
     
 button {
   background-color: #001E6C; /* Cool blue */

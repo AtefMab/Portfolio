@@ -137,7 +137,7 @@
   var loaderPage = function () {
     setTimeout(function () {
       $(".fh5co-loader").fadeOut("slow");
-    }, 2000);
+    }, 700);
   };
 
   $(function () {

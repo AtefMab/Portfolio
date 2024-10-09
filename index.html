@@ -552,7 +552,8 @@ calendar
 
 				</div>
 				<div class="form-group">
-					<input type="submit" style="cursor: none;" value="Send Message" class="btn btn-primary">
+					<input type="submit" id="submitButton" value="Send Message" class="btn btn-primary" onclick="showLoading()" style="cursor: pointer;">
+
 				</div>
 
 			</form>	
@@ -587,6 +588,22 @@ calendar
 *:hover{
 	cursor:none
 }
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: darkviolet;
+    animation: spin 1s ease-in-out infinite;
+    margin-left: 10px;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 		#fh5co-footer {
 			margin-bottom:10px;
 		  opacity: 0;
@@ -660,6 +677,30 @@ calendar
 		  
 		};
 		magicMouse(options);
+		function showLoading() {
+    var submitButton = document.getElementById('submitButton');
+    // Change the button text to "Loading..."
+    submitButton.value = 'Loading...';
+    // Disable the button to prevent multiple submissions
+    submitButton.disabled = true;
+    // Change cursor to default
+    submitButton.style.cursor = 'default';
+    
+    // Optional: Add spinner after text (You can customize or remove this)
+    var spinner = document.createElement('span');
+    spinner.classList.add('spinner');
+    submitButton.parentNode.insertBefore(spinner, submitButton.nextSibling);
+
+    // Simulate a delay (e.g., for a form submission) and reset after 3 seconds
+    setTimeout(function () {
+      // Restore the original button text and re-enable the button
+      submitButton.value = 'Send Message';
+      submitButton.disabled = false;
+      submitButton.style.cursor = 'pointer';
+      // Remove the spinner
+      spinner.remove();
+    }, 3000); // Change 3000ms to the actual loading duration you want
+  }
 	  </script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>

@@ -521,7 +521,6 @@
 			<h2>Contact</h2>
 			
 			<form action="https://formsubmit.co/atefmabrouki98@outlook.com" method="POST">
-				<input type="hidden" name="_next" value="https://atefmab.github.io/Portfolio/thankyou">
 
 				<div class="row form-group">
 					<div class="col-md-6">
@@ -698,6 +697,9 @@
     var spinner = document.createElement('span');
     spinner.classList.add('spinner');
     submitButton.parentNode.insertBefore(spinner, submitButton.nextSibling);
+	setTimeout(() => {
+		window.location.href="https://atefmab.github.io/Portfolio/thankyou"
+	}, 8000);
 
     // Simulate a delay (e.g., for a form submission) and reset after 3 seconds
     

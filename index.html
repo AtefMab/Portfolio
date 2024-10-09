@@ -286,7 +286,7 @@
 
 
 <div>
-calendar 
+
 
 </div>
 
@@ -551,8 +551,8 @@ calendar
 
 
 				</div>
-				<div class="form-group">
-					<input type="submit" id="submitButton" value="Send Message" class="btn btn-primary" onclick="showLoading()" style="cursor: pointer;">
+				<div class="form-group" onclick="showLoading()">
+					<input type="submit" id="submitButton" value="Send Message" class="btn btn-primary"  style="cursor: pointer;">
 
 				</div>
 
@@ -656,8 +656,15 @@ calendar
 		  color: #ffffff;
 		}
 		.calendly-badge-widget {
-    right: 4% !important; /* Ensure the right positioning is removed */
-	bottom: 2% !important;
+			right: 4% !important; /* Ensure the right positioning is removed */
+			bottom: 2% !important;
+			@media screen and (max-width: 992px) {
+  width: 150px;
+  margin-right: 12%;
+  
+  height: inherit;
+}
+   
   }
 	  </style>
 	
@@ -682,7 +689,6 @@ calendar
     // Change the button text to "Loading..."
     submitButton.value = 'Loading...';
     // Disable the button to prevent multiple submissions
-    submitButton.disabled = true;
     // Change cursor to default
     submitButton.style.cursor = 'default';
     
@@ -692,14 +698,7 @@ calendar
     submitButton.parentNode.insertBefore(spinner, submitButton.nextSibling);
 
     // Simulate a delay (e.g., for a form submission) and reset after 3 seconds
-    setTimeout(function () {
-      // Restore the original button text and re-enable the button
-      submitButton.value = 'Send Message';
-      submitButton.disabled = false;
-      submitButton.style.cursor = 'pointer';
-      // Remove the spinner
-      spinner.remove();
-    }, 3000); // Change 3000ms to the actual loading duration you want
+    
   }
 	  </script>
 	<script src="js/jquery.min.js"></script>

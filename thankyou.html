@@ -6,13 +6,15 @@
     <title>thank You ! </title>
 </head>
 <body>
-    <div class=content style="margin: 20%;">
+    <div class=content >
         <div class="wrapper-1">
           <div class="wrapper-2">
             <h1>Thank you !</h1>
             <p>Thanks for Reaching Out !  </p>
             <p>you should receive a response email soon  </p>
-            <button class="go-home" href="https://atefmab.github.io/Portfolio/">
+            <div class="calendly-inline-widget" data-url="https://calendly.com/atefmabrouki98/book-a-call?background_color=1a1a1a&text_color=ffffff&primary_color=6609d3" style="min-width:320px;height:850px;margin-top: 20px;"></div>
+
+            <button class="go-home" onclick="home()">
             go home
             </button>
           </div>
@@ -115,9 +117,14 @@
       }</style>
       <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Source+Sans+Pro" rel="stylesheet">
       <script>
-        setTimeout(() => {
-            window.location.href="https://atefmab.github.io/Portfolio/"
-        }, 5000);
+       function home (){
+window.location.href="https://atefmab.github.io/Portfolio/"
+       }
+            
+    
       </script>
+      <!-- Calendly inline widget begin -->
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
 </body>
 </html>

@@ -113,7 +113,7 @@
       lineWidth: 4,
       lineCap: "butt",
       barColor: "violet",
-      trackColor: "#f5f5f5",
+      trackColor: "lightgrey",
       size: 160,
       animate: 10,
     });
@@ -137,7 +137,7 @@
   var loaderPage = function () {
     setTimeout(function () {
       $(".fh5co-loader").fadeOut("slow");
-    }, 700);
+    }, 500);
   };
 
   $(function () {

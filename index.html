@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
     <link rel="icon" type="image/png" href="images/code.png"> <!-- Use .ico if you have a .ico file -->
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -29,7 +30,6 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">	
-		<!-- style="background-image:url(images/test1.jpg); background-size:cover;height: 20%;width: 100%;" -->
 	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner"  >
 		<img src="images/back.jpg" style="height: 100%;width: 100%;position: absolute;" data-stellar-background-ratio="10">
 		<div class="overlay" ></div>
@@ -284,8 +284,17 @@
 		</div>
 	</div>
 
+
+<div>
+calendar 
+
+</div>
+
 	<div id="fh5co-skills" class="animate-box">
-		<div class="container">
+
+
+		<button >FrontEnd Skills</button>
+		<!-- <div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Skills</h2>
@@ -344,7 +353,7 @@
 						<div class="chart" data-percent="93"><span><strong>Sass</strong>80%</span></div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<div style="width: 90%;margin-left: 4%;" class="row">
 				<div class="col-md-6">
 					<div class="progress-wrap">
@@ -510,37 +519,34 @@
 		</div>
 		<div class="choose animate-box">
 			<h2>Contact</h2>
-			<form action="#">
+			
+			<form action="https://formsubmit.co/atefmabrouki98@outlook.com" method="POST">
 				<div class="row form-group">
 					<div class="col-md-6">
-						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+						<input type="text" id="fname" class="form-control" placeholder="Name" name="name">
 					</div>
 				</div>
+				
 				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+					<div class="col-md-12">
+						<input type="text" id="email" class="form-control" name="email" placeholder="Your email address">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="email" class="form-control" placeholder="Your email address">
+						<input type="text" id="subject" class="form-control" name="_subject" placeholder="Your subject of this message">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+						<textarea name="message" id="message" cols="30" rows="10" class="form-control"  placeholder="Say something about me !"></textarea>
 					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about me !"></textarea>
-					</div>
+					<input type="hidden" name="_next" value="https://facebook.com">
 				</div>
 				<div class="form-group">
-					<input type="button" style="cursor: none;" value="Send Message" class="btn btn-primary">
+					<input type="submit" style="cursor: none;" value="Send Message" class="btn btn-primary">
 				</div>
 
 			</form>	
@@ -626,8 +632,12 @@
 		#fh5co-footer a:hover {
 		  color: #ffffff;
 		}
+		.calendly-badge-widget {
+    right: 4% !important; /* Ensure the right positioning is removed */
+	bottom: 2% !important;
+  }
 	  </style>
-	  
+	
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
@@ -654,7 +664,11 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<script src="js/google_map.js"></script>
 	
-	
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/atefmabrouki98/book-a-call?hide_gdpr_banner=1&background_color=1d1d1d&text_color=ffffff&primary_color=9400d3', text: 'Schedule a Call with me', color: '#000000', textColor: '#ffffff', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
 	<script src="js/main.js"></script>
 
 	</body>

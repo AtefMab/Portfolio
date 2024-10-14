@@ -34,13 +34,24 @@ button {
   border: none;
   border-radius: 25px;
   font-size: 18px;
-  cursor: pointer;
+  cursor: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: ease-in-out 0.5s;
   align-self: center;
 }
-
+.im:hover{
+  transform: scale(1.40); /* Slightly enlarges the button on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  transition: ease-in-out 0.5s;
+  z-index: 5;
+  opacity: 1;
+}
+.im{
+  transition: ease-in-out 0.5s;
+  z-index: 0;
+  opacity: 0.5;
+}
 button:hover {
   background-color: #00397c;
   transform: scale(1.15); /* Slightly enlarges the button on hover */
@@ -358,6 +369,55 @@ h1, h2, h3, h4, h5, h6, figure {
     margin-bottom: 3em;
   }
 }
+.skills-section {
+ 
+  border-radius: 8px;
+  padding: 80px;
+  width: 100%;
+  cursor: none;
+  
+}
+
+/* h1 {
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 20px;
+} */
+
+.skills-category {
+  margin-bottom: 35px;
+}
+
+.skills-category h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+}
+
+.skill {
+  background-color: darkviolet;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  display: inline-block;
+  text-align: center;
+  transition: 5s ease-in-out;
+}
+
+.skill:hover {
+  background-color: #4b4949;
+  cursor: none;
+  transform: scale(1.1); 
+  transition: transform 0.5s ease-in-out;
+  color: white;
+}
 .info li {
   width: 100%;
   float: left;
@@ -368,7 +428,6 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-top: 0;
 }
 .info li .first-block {
-  width: 40%;
   display: inline-block;
   float: left;
   color: #000;
@@ -438,9 +497,6 @@ h1, h2, h3, h4, h5, h6, figure {
   background: darkviolet;
 }
 
-.fh5co-heading {
-  margin-bottom: 5em;
-}
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
 }
@@ -771,7 +827,7 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s;
+  transition: 0.8s;
 }
 .work .desc h3 {
   font-size: 20px;
@@ -805,7 +861,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .work:hover .desc {
 
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .work:hover .desc h3 {
   -webkit-transform: translate3d(0, 0, 0);

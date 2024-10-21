@@ -50,6 +50,20 @@ button {
 .im{
   transition: ease-in-out 0.5s;
   z-index: 0;
+  opacity: 0.7;
+  overlay: 1;
+}
+.imapp:hover{
+  transform: scale(1.1); /* Slightly enlarges the button on hover */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); */
+  transition: ease-in-out 0.5s;
+  z-index: 5;
+  overlay: 1;
+  opacity: 1;
+}
+.imapp{
+  transition: ease-in-out 0.5s;
+  z-index: 0;
   opacity: 0.5;
 }
 button:hover {

@@ -467,6 +467,12 @@ document.addEventListener("keydown", function (event) {
 
     }
   });
+  function heigh(){
+	console.log("test",window.screen.height/100*20);
+	
+	return window.screen.height / 20 *100
+  }
+  
 </script>
 	<div id="fh5co-work" class="fh5co-bg-dark">
 		<div class="container">
@@ -486,8 +492,8 @@ document.addEventListener("keydown", function (event) {
 				</div>
 				
 
-				<div id="customModal1" class="modal" style="backdrop-filter: blur(20px);">
-					<div style="background-color: rgba(0 0 0 /56%);height: 100%;">
+				<div id="customModal1" class="modal" style="backdrop-filter: blur(20px);overflow-y: auto;">
+					<div style="background-color: rgba(0 0 0 /56%);min-height: 100%;">
 						<div class="modal-content"  style="background-color: transparent; box-shadow: none;border: 0;left: 3%; ">
 						<span class="close" style="font-size: 53px;opacity: 0.5;margin-right: 4%;" onclick="closeModal(1)">&times;</span>
 						<h2 style="padding-top: 1%;">Terrent</h2>
@@ -495,17 +501,21 @@ document.addEventListener("keydown", function (event) {
 					
 						<div class="container">
 							<div class="row">
-								<img class="im" src="https://www.cityguide-dubai.com/fileadmin/_processed_/3/3/csm_img-worlds-of-adventures-teaser_40e4184da1.jpg" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
-								<img class="im" src="https://www.cityguide-dubai.com/fileadmin/_processed_/3/3/csm_img-worlds-of-adventures-teaser_40e4184da1.jpg" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
+								<img class="imapp" src="images/app1.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;height: 50%;">
+								<img class="imapp" src="images/app2.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;height: 50%;">
 
-								<img class="im" src="https://www.cityguide-dubai.com/fileadmin/_processed_/3/3/csm_img-worlds-of-adventures-teaser_40e4184da1.jpg" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
+								<img class="imapp" src="images/app3.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;height: 50%; 	">
 							</div>
 							
-							<div class="row">
-								<video style="margin-top: 7%;border-radius: 20px;cursor: pointer;" width="90%"  height="30%" controls muted autoplay preload="auto">
-									<source src="images/vid.mp4" type="video/mp4">
+							<div class="row" style="display: flex;gap: 6px;">
+								<img class="imapp" src="images/app4.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;height: 50%;">
+								<video style="border-radius: 20px;cursor: pointer;margin-bottom: 5%;width:30%;border-radius:10px;height: 50%;"  controls muted autoplay preload="auto">
+									<source src="https://res.cloudinary.com/du5ydewvs/video/upload/v1729514823/portfolio/lihhgvq4nlcfacl47lkm.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
+								<img class="imapp" src="images/app5.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;height: 50%; 	">
+							
+								
 							</div>
 						</div>
 					</div></div>
@@ -538,7 +548,7 @@ document.addEventListener("keydown", function (event) {
 							
 							<div class="row">
 								<video style="margin-top: 7%;border-radius: 20px;cursor: pointer;" width="90%"  height="30%" controls muted autoplay preload="auto">
-									<source src="images/vid.mp4" type="video/mp4">
+									<source src="images/postvid.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 							</div>
@@ -564,15 +574,15 @@ document.addEventListener("keydown", function (event) {
 					
 						<div class="container">
 							<div class="row">
-								<img class="im" src="https://www.cityguide-dubai.com/fileadmin/_processed_/3/3/csm_img-worlds-of-adventures-teaser_40e4184da1.jpg" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
-								<img class="im" src="https://www.cityguide-dubai.com/fileadmin/_processed_/3/3/csm_img-worlds-of-adventures-teaser_40e4184da1.jpg" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
+								<img class="im" src="images/khabini1.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
+								<img class="im" src="images/khabini2.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
 
-								<img class="im" src="https://www.cityguide-dubai.com/fileadmin/_processed_/3/3/csm_img-worlds-of-adventures-teaser_40e4184da1.jpg" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
+								<img class="im" src="images/khabini3.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
 							</div>
 							
 							<div class="row">
 								<video style="margin-top: 7%;border-radius: 20px;cursor: pointer;" width="90%"  height="30%" controls muted autoplay preload="auto">
-									<source src="images/vid.mp4" type="video/mp4">
+									<source src="https://res.cloudinary.com/du5ydewvs/video/upload/v1729514823/portfolio/fknmpxo2wesz68zppdgv.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 							</div>
@@ -598,15 +608,15 @@ document.addEventListener("keydown", function (event) {
 					
 						<div class="container">
 							<div class="row">
-								<img class="im" src="https://www.cityguide-dubai.com/fileadmin/_processed_/3/3/csm_img-worlds-of-adventures-teaser_40e4184da1.jpg" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
-								<img class="im" src="https://www.cityguide-dubai.com/fileadmin/_processed_/3/3/csm_img-worlds-of-adventures-teaser_40e4184da1.jpg" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
+								<img class="im" src="images/next1.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
+								<img class="im" src="images/next2.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
 
-								<img class="im" src="https://www.cityguide-dubai.com/fileadmin/_processed_/3/3/csm_img-worlds-of-adventures-teaser_40e4184da1.jpg" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
+								<img class="im" src="images/next3.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
 							</div>
 							
 							<div class="row">
 								<video style="margin-top: 7%;border-radius: 20px;cursor: pointer;" width="90%"  height="30%" controls muted autoplay preload="auto">
-									<source src="images/vid.mp4" type="video/mp4">
+									<source src="images/nextgenvid.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 							</div>

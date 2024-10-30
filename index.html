@@ -589,7 +589,8 @@ document.addEventListener("keydown", function (event) {
 						</div>
 					</div></div>
 					
-				</div>	<div class="col-md-3 text-center col-padding animate-box">
+				</div>	
+				<div class="col-md-3 text-center col-padding animate-box">
 					<a  class="work" style="background-image: url(images/nextgen.png);border-radius: 20px;background-color: #fff;" onclick="openModal(4)" >
 						<div class="desc" >
 							<h3>Next Gen </h3>
@@ -625,12 +626,39 @@ document.addEventListener("keydown", function (event) {
 					
 				</div>
 				<div class="col-md-3 text-center col-padding animate-box">
-					<a  class="work" style="background-image: url(images/portfolio-5.jpg);border-radius: 20px;">
-						<div class="desc" style="opacity: 0.9;">
-							<h3>in Progress ...</h3>
-							<span>Mobile App</span>
+					<a  class="work" style="background-image: url(images/pok.png);border-radius: 20px;background-color: #fff;" onclick="openModal(5)" >
+						<div class="desc" >
+							<h3>Pokedex</h3>
+							<span>Website</span>
 						</div>
 					</a>
+				</div>
+				
+
+				<div id="customModal5" class="modal" style="backdrop-filter: blur(20px);">
+					<div style="background-color: rgba(0 0 0 /56%);height: 100%;">
+						<div class="modal-content"  style="background-color: transparent; box-shadow: none;border: 0;left: 3%; ">
+						<span class="close" style="font-size: 53px;opacity: 0.5;margin-right: 4%;" onclick="closeModal(5)">&times;</span>
+						<h2 style="padding-top: 1%;">Pokedex</h2>
+					
+					
+						<div class="container">
+							<div class="row">
+								<img class="im" src="images/pok1.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
+								<img class="im" src="images/pok2.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
+
+								<img class="im" src="images/pok3.png" class="img-fluid" alt="Sample Image" style="width:30%;border-radius:10px;">
+							</div>
+							
+							<div class="row">
+								<video style="margin-top: 7%;border-radius: 20px;cursor: pointer;" width="90%"  height="30%" controls muted autoplay preload="auto">
+									<source src="https://res.cloudinary.com/du5ydewvs/video/upload/f_auto:video,q_auto/v1/portfolio/cjfudtupkrzdvcvs23yv" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+					</div></div>
+					
 				</div>
 				<div class="col-md-3 text-center col-padding animate-box">
 					<a  class="work" style="background-image: url(images/portfolio-6.jpg);border-radius: 20px;">
